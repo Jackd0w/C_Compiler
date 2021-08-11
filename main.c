@@ -32,10 +32,8 @@ static void scanfile() {
   }
 }
 
-// Main program: check arguments and print a usage
-// if we don't have an argument. Open up the input
-// file and call scanfile() to scan the tokens in it.
-void main(int argc, char *argv[]) {
+
+int main(int argc, char *argv[]) {
   if (argc != 2)
     usage(argv[0]);
 
@@ -47,5 +45,5 @@ void main(int argc, char *argv[]) {
   }
 
   scanfile();
-  exit(0);
+  return 0;
 }
